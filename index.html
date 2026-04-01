@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ยินดีต้อนรับ - หน้าหลัก</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Kanit', sans-serif; }
+        .fade-in { animation: fadeIn 1.5s ease-in-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-500 to-indigo-900 min-h-screen flex items-center justify-center p-4">
+
+    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden max-w-lg w-full fade-in">
+        <!-- ส่วนหัว/Banner -->
+        <div class="bg-indigo-600 p-6 text-white text-center">
+            <h1 class="text-4xl font-bold tracking-wider mb-2">WELCOME</h1>
+            <p class="text-indigo-100 italic">ยินดีต้อนรับเข้าสู่เว็บไซต์</p>
+        </div>
+
+        <!-- ส่วนเนื้อหา -->
+        <div class="p-8 text-center">
+            <div class="mb-6 relative inline-block">
+                <!-- รูปภาพ im1.jpg -->
+                <img src="im1.jpg" alt="[รูปภาพของทักษ์ดนัย]" 
+                     onerror="this.src='https://via.placeholder.com/400x300?text=im1.jpg+Missing'"
+                     class="rounded-xl shadow-lg w-full object-cover border-4 border-indigo-50 hover-scale">
+            </div>
+
+            <div class="space-y-2 mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800">นายทักษ์ดนัย เครือแก้ว</h2>
+                <p class="text-gray-600 text-lg">ชั้นมัธยมศึกษาปีที่ 4/11 | เลขที่ 2</p>
+            </div>
+
+            <!-- ลิงค์เชื่อมโยง -->
+            <div class="flex flex-col gap-4">
+                <a href="A01.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 shadow-md flex items-center justify-center gap-2">
+                    ไปยังหน้าข้อมูลนักเรียน (A01)
+                    <span>→</span>
+                </a>
+                
+                <!-- ลิงค์ภายนอกตามโจทย์ -->
+                <a href="https://www.google.com" target="_blank" class="text-sm text-indigo-500 hover:underline">
+                    ไปยังเว็บไซต์ภายนอก (Google)
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="bg-gray-50 p-4 text-center text-xs text-gray-400">
+            ใบกิจกรรมการเชื่อมโยงเว็บด้วยลิงค์
+        </div>
+    </div>
+
+</body>
+</html>
+
