@@ -2,60 +2,66 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ยินดีต้อนรับ - หน้าหลัก</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>หน้าหลัก</title>
     <style>
-        body { font-family: 'Kanit', sans-serif; }
-        .fade-in { animation: fadeIn 1.5s ease-in-out; }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        body {
+            background-color: #d1eff7; /* สีพื้นหลังฟ้าอ่อนตามรูปตัวอย่างแรก */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 50px 0;
+            text-align: center;
         }
-        .hover-scale { transition: transform 0.3s ease; }
-        .hover-scale:hover { transform: scale(1.05); }
+        .banner-container {
+            width: 800px;
+            height: 250px;
+            margin: 0 auto;
+            background-color: #0b1c4a; /* สีพื้นหลังป้ายแบนเนอร์น้ำเงินเข้ม */
+            display: flex;
+            align-items: center;
+            border: 2px solid #000;
+        }
+        .banner-image {
+            width: 45%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .banner-text {
+            width: 55%;
+            color: #ffcc00; /* ตัวหนังสือสีเหลืองทอง */
+            font-size: 65px;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-shadow: 2px 2px 4px #000000;
+            margin: 0;
+        }
+        .enter-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 40px;
+            background: linear-gradient(to right, #6bc5e8, #3b8cd4);
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border: 1px solid #005580;
+            border-radius: 2px;
+        }
+        .enter-btn:hover {
+            background: linear-gradient(to right, #3b8cd4, #6bc5e8);
+        }
     </style>
 </head>
-<body class="bg-gradient-to-br from-blue-500 to-indigo-900 min-h-screen flex items-center justify-center p-4">
+<body>
 
-    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden max-w-lg w-full fade-in">
-        <!-- ส่วนหัว/Banner -->
-        <div class="bg-indigo-600 p-6 text-white text-center">
-            <h1 class="text-4xl font-bold tracking-wider mb-2">WELCOME</h1>
-            <p class="text-indigo-100 italic">ยินดีต้อนรับเข้าสู่เว็บไซต์</p>
-        </div>
-
-        <!-- ส่วนเนื้อหา -->
-        <div class="p-8 text-center">
-            <div class="mb-6 relative inline-block">
-                <!-- รูปภาพ im1.jpg -->
-                <img src="im1.jpg" alt="[รูปภาพของทักษ์ดนัย]" 
-                     onerror="this.src='https://via.placeholder.com/400x300?text=im1.jpg+Missing'"
-                     class="rounded-xl shadow-lg w-full object-cover border-4 border-indigo-50 hover-scale">
-            </div>
-
-
-            <!-- ลิงค์เชื่อมโยง -->
-            <div class="flex flex-col gap-4">
-                <a href="A01.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 shadow-md flex items-center justify-center gap-2">
-                    ไปยังหน้าข้อมูลนักเรียน (A01)
-                    <span>→</span>
-                </a>
-                
-                <!-- ลิงค์ภายนอกตามโจทย์ -->
-                <a href="https://www.google.com" target="_blank" class="text-sm text-indigo-500 hover:underline">
-                    ไปยังเว็บไซต์ภายนอก (Google)
-                </a>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <div class="bg-gray-50 p-4 text-center text-xs text-gray-400">
-            ใบกิจกรรมการเชื่อมโยงเว็บด้วยลิงค์
-        </div>
+    <!-- ส่วนแบนเนอร์หน้าแรก (ตรงตามรูปตัวอย่างบน) -->
+    <div class="banner-container">
+        <!-- ใส่รูป im1.jpg -->
+        <img src="im1.jpg" alt="[รูปภาพหน้าแรก]" class="banner-image">
+        <h1 class="banner-text">WELCOME</h1>
     </div>
+
+    <!-- ปุ่มลิงค์ไปหน้าสอง (A01.html) -->
+    <a href="A01.html" class="enter-btn">เข้าสู่เว็บไซต์ &gt;&gt;</a>
 
 </body>
 </html>
+
 
