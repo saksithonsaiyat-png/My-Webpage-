@@ -9,13 +9,13 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
         }
-        /* สร้างโครงสร้างตารางให้เหมือนรูปตัวอย่างที่สอง */
+   
         .main-table {
             width: 900px;
             margin: 20px auto;
             border-collapse: collapse;
-            border: 4px solid #f9e596; /* ขอบสีเหลืองอ่อน */
-            background-color: #cceeff; /* พื้นหลังสีฟ้าอ่อนในกรอบ */
+            border: 4px solid #f9e596;
+            background-color: #cceeff; 
         }
         .header-row {
             background-color: #f7fae8;
@@ -29,19 +29,18 @@
             vertical-align: top;
             padding: 15px;
         }
-        /* คอลัมน์ซ้าย */
         .col-left {
             width: 15%;
             border-right: 4px solid #f9e596;
             text-align: left;
             font-size: 14px;
         }
-        /* คอลัมน์กลาง */
+
         .col-center {
             width: 70%;
             text-align: center;
         }
-        /* คอลัมน์ขวา */
+     
         .col-right {
             width: 15%;
             border-left: 4px solid #f9e596;
@@ -73,32 +72,32 @@
 <body>
 
     <table class="main-table">
-        <!-- ส่วนหัว (Banner) -->
+    
         <tr>
             <td colspan="3" class="header-row">
                 <b>WELCOME</b>
             </td>
         </tr>
 
-        <!-- ส่วนเนื้อหา แบ่ง 3 คอลัมน์ตามรูปตัวอย่าง -->
+        
         <tr class="content-row">
-            <!-- ซ้าย: เมนูเชื่อมโยง -->
+
             <td class="col-left">
                 <a href="index.html">หน้าหลัก</a><br>
                 <a href="A01.html">ข้อมูลนักเรียน</a>
             </td>
 
-            <!-- กลาง: ข้อมูลนักเรียน -->
+
             <td class="col-center">
                 <h3 style="margin-top: 0;">งานรายวิชาเทคโนโลยี 1</h3>
                 
-                <!-- ใส่รูป im2.jpg -->
+
                 <img src="im2.jpg" alt="[รูปภาพนักเรียน]" class="profile-img"><br>
                 
                 <p>ของ นายทักษ์ดนัย เครือแก้ว ชั้น 4/11 เลขที่ 2</p>
             </td>
 
-            <!-- ขวา: ลิงค์ไปเว็บภายนอกตามโจทย์ -->
+
             <td class="col-right">
                 <b>เว็บไซต์ยอดฮิต</b><br>
                 <a href="https://www.google.com" target="_blank">Google</a><br>
@@ -107,7 +106,6 @@
             </td>
         </tr>
 
-        <!-- ส่วนท้าย (Footer) -->
         <tr>
             <td colspan="3" class="footer-row">
                 ผลงาน วิชาเทคโนโลยี
